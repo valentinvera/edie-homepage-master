@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+$black: #393939;
+$white: #ececec;
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none;
+        -webkit-animation: none;
+        transition: none;
+        -webkit-transition: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    $white: #ececec;
+}
+
+@media (prefers-contrast: high) {
+    $bgcolor: $black;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none;
+        transition: none;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    color: $black;
+}
+
+
+img, source {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center center;
+    -o-object-position: center center;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+p a {
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, i, b, u, em {
+    color: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+}
+
+::-moz-selection {
+    background-color: $black;
+    color: $white;
+}
+
+::selection {
+    background-color: $black;
+    color: $white;
+}
+
+form, input, textarea, select, button, label {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    display: block;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+table, tr, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
