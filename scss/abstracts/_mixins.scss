@@ -1,0 +1,11 @@
+@use 'abstracts';
+
+@mixin mq-maxwidth($breakpoint) {
+    @if map-get($breakpoints, $breakpoint) {
+        @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+            @content;  
+        }
+    } @else {
+        @error "El valor '#{ $breakpoint }' no ha sido declarado como breakpoint";
+    }
+}
