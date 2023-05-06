@@ -1,0 +1,35 @@
+@use 'abstracts';
+
+$font-family-primary: 'Poppins';
+$font-family-secondary: 'Heebo';
+$font-family-tertiary: 'Montserrat';
+
+body {
+    font-size: 1rem;
+    font-family: $font-family-primary;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    color: map-get($palette, 'light-black');
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: $fw-medium;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: $fw-bold;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: $fw-medium;
+}
+
+p {
+    color: map-get($palette, 'grey');
+    font-size: 1rem;
+    font-weight: $fw-regular;
+}
