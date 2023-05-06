@@ -1,4 +1,4 @@
-@use 'abstracts';
+@use 'breakpoints' as *;
 
 @mixin mq-maxwidth($breakpoint) {
     @if map-get($breakpoints, $breakpoint) {
