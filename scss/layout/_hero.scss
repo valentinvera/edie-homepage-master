@@ -1,0 +1,46 @@
+@use '../abstracts' as *;
+
+.hero {
+    padding-top: 8.5rem;
+    display: grid;
+    gap: 1rem;
+
+    &__container {
+        padding-left: 3.75rem;
+    }
+
+    &__a {
+        color: map-get($palette, 'light-blue');
+        font-size: .75rem;
+        font-weight: $fw-medium;
+    }
+    
+    &__h2 {
+        font-size: 1.5rem;
+        font-weight: $fw-medium;
+        width: 84%;
+    }
+    
+    &__h2:nth-child(1) {
+        width: 72%;
+        margin-bottom: 1rem;
+    }
+
+    &__figure {
+        width: 21.75rem;
+        height: 9.063rem;
+        margin-inline: auto;
+        img {
+            height: 100%;
+            object-fit: fill;
+            border-radius: 1.125rem;
+        }
+    }
+
+    &__p {
+        font-size: .75rem;
+        font-weight: $fw-regular;
+        width: 85%;
+        margin-bottom: 2rem;
+    }
+}
