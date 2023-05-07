@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.button {
+    color: map-get($palette, 'light-white');
+    background-color: map-get($palette, 'light-blue');
+    padding: .50rem 1.5rem;
+    margin: .25rem 0 0 0;
+    border: none;
+    border-radius: .75rem;
+    position: absolute;
+    left: 16.5rem;
+    cursor: pointer;
+}
