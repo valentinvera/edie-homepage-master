@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.hero__form {
+    display: flex;
+    flex-direction: column;
+        
+    .hero__label {
+        color: map-get($palette, 'grey-shaded');
+        font-size: .625rem;
+        font-weight: $fw-medium;
+        margin-bottom: .50rem;
+    }
+        
+    .hero__div {
+        display: flex;
+    }
+
+    .hero__input {
+        background-color: map-get($palette, 'light-white');
+        border: none;
+        border-radius: .75rem;
+        padding: .75rem 5.5rem .75rem 0;
+    }
+
+    ::placeholder {
+        color: map-get($palette, 'light-grey');
+        font-size: .875rem;
+        padding: 0 0 0 1rem;
+    }
+}
