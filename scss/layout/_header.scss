@@ -1,96 +1,82 @@
 @use '../abstracts' as *;
 
-.header.active {
-    background-color: map-get($palette, 'light-grey');
-}
 
 .header {
-    height: 5rem;
-    padding: 1.5rem 3rem 0;
-    position: sticky;
-    inset: 0;
-    z-index: 100;
-    transition: all 1s ease-in-out;
-    
-    @include mq-maxwidth('sm') {
-        padding: 1.5rem 0 0;
-    }
 
+    .nav.active {
+        background-color: #fffcfc;
+    }
+    
     .nav {
+        height: 5rem;
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        transition: all 1s ease-in-out;
         display: flex;
         justify-content: space-between;
+        padding: 1.5rem 0 0;
 
         &__h1 {
             font-family: $font-family-secondary;
             font-size: 2.25rem;
             font-weight: $fw-extrabold;
-
+            
             @include mq-maxwidth('sm') {
                 margin-left: 1rem;
             }
         }
 
         &__button {
-            display: none;
+            display: block;
+            width: 1.875rem;
+            height: 1.875rem;
+            cursor: pointer;
+            z-index: 100;
+            border: none;
+            margin-right: 1.5rem;
+            
+            .nav__div {
+                width: 100%;
+                height: .188rem;
+                background-color: #000;
+                display: flex;
+                flex-direction: column;
+                margin-top: .375rem;
+                transform-origin: 0 100%;
+                transition: all 500ms;
+            }
 
-            @include mq-maxwidth('sm') {
-                display: block;
-                width: 1.875rem;
-                height: 1.875rem;
-                cursor: pointer;
-                z-index: 100;
-                border: none;
-                margin-right: 1.5rem;
-
-                .nav__div {
-                    width: 100%;
-                    height: .188rem;
-                    background-color: #000;
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: .375rem;
-                    transform-origin: 0 100%;
-                    transition: all 500ms;
-                }
-
-                .activenav__div--first {
-                    transform: rotate(45deg) translate(-.125rem, .063rem);
-                }
+            .activenav__div--first {
+                transform: rotate(45deg) translate(-.125rem, .063rem);
+            }
                  
-                .activenav__div--second {
-                    opacity: 0;
-                }
-                 
-                .activenav__div--third {
-                    transform: rotate(-45deg) translate(-.25rem, .125rem);
-                }
+            .activenav__div--second {
+                opacity: 0;
+            }
+             
+            .activenav__div--third {
+                transform: rotate(-45deg) translate(-.25rem, .125rem);
             }
         }
 
         &__ul {
+            position: fixed;
+            inset: 0;
             display: flex;
+            flex-direction: column;
+            place-content: center;
+            text-align: center;
             gap: 2.5rem;
-
-            @include mq-maxwidth('sm') {
-                position: fixed;
-                inset: 0;
-                display: flex;
-                flex-direction: column;
-                place-content: center;
-                text-align: center;
-                gap: 2.5rem;
-                transform: translateY(-100%);
-                transition: transform 1s ease-in-out;
-                background-color: map-get($palette, 'light-grey');
-            }
+            transform: translateY(-100%);
+            transition: transform 1s ease-in-out;
+            background-color: #fffcfc;
+        }
+            
+        .nav__ul--show {
+            transform: translateY(0);
         }
         
-        @include mq-maxwidth('sm') {
-            .nav__ul--show {
-                transform: translateY(0);
-            }
-        }
-
         &__li {
             a {
                 font-size: 1.5rem;
