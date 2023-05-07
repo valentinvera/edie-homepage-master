@@ -1,4 +1,4 @@
-const header = document.querySelector('.header');
+const nav = document.querySelector('.nav');
 const menuList = document.querySelector('.nav__ul');
 const links = document.querySelectorAll('.nav__a');
 const menuHamburger = document.querySelector('.nav__button');
@@ -24,8 +24,8 @@ links.forEach((links) => {
 
 document.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
-        header.classList.add('active')
+        nav.classList.add('active')
     } else {
-        header.classList.remove('active')
+        nav.classList.remove('active')
     }
 })
