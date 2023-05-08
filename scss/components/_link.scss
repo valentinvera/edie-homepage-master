@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.services__a {
+    color: map-get($palette, 'grey-shaded');
+    background-color: map-get($palette, 'opaque-grey');
+    border-radius: .75rem;
+    display: inline-block;
+    padding: .50rem .75rem;
+
+    &:active {
+        color: #fff;    
+        background-color: map-get($palette, 'light-blue');
+        transition: all .3s ease-in-out;
+    }
+}
