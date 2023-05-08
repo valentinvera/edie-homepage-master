@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+.main {
+
+    &__h2 {
+        font-size: 1.5rem;
+        font-weight: $fw-medium;
+        margin: 7rem 0 2rem 3rem;
+    }
+
+    .services__section {
+
+        .services__h2 {
+            width: 56%;
+        }
+
+        .services__container {
+            display: flex;
+            flex-direction: column;
+            place-content: center;
+            gap: 2rem;
+            margin: 0 0 10rem 0;
+        }
+    }
+}
