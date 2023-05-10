@@ -83,4 +83,64 @@
             }
         }
     }
+
+    .team__section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 6rem;
+
+        .team__div--texts {
+            display: flex;
+            flex-direction: column;
+            margin-left: .5rem;
+
+            .team__h2 {
+                font-size: 2.25rem;
+                width: 75%;
+                margin-bottom: .75rem;
+            }
+            
+            .team__p:nth-child(1) {
+                color: map-get($palette, 'crimson');
+                font-size: 1.125rem;
+                font-weight: $fw-medium;
+            }
+        
+            .team__p:nth-child(3) {
+                width: 61%;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .team__div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-inline: 1.25rem;
+
+            img {
+                border-radius: 1.5rem;
+            }
+
+            .team__figure--3 {
+                position: relative;
+                top: 4.375rem;
+                right: .5rem;
+                height: 11.125rem;
+                width: 11.125rem;
+            }
+            
+            .team__figure--2 {
+                position: relative;
+                top: -1.438rem;
+                grid-column: 2 / 3;
+                height: 10.348rem;
+                width: 10.125rem;
+            }
+            
+            .team__figure--1 {
+                width: 9.047rem;
+                height: 9.047rem;
+            }
+        }
+    }
 }
