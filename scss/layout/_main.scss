@@ -143,4 +143,45 @@
             }
         }
     }
+
+    .testimony__section {
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+
+        .testimony__h2 {
+            font-size: 1.5rem;
+            width: 96%;
+            padding-left: .5rem;
+        }
+
+        .testimony__div {
+            display: flex;
+            margin-top: 3rem;
+
+            .testimony__figure {
+                width: 5.125rem;
+                img {
+                    border-radius: .75rem;
+                }
+            }
+
+            .testimony__container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 1.875rem;
+                gap: .75rem;
+            }
+
+            .testimony__p {
+                font-size: 1.5rem;
+                font-weight: $fw-medium;
+            }
+
+            .testimony__span {
+                color: map-get($palette, 'grey-shaded');
+                font-size: 1.125rem;
+            }
+        }
+    }
 }
