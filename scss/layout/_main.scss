@@ -5,21 +5,82 @@
     &__h2 {
         font-size: 1.5rem;
         font-weight: $fw-medium;
-        margin: 7rem 0 2rem 3rem;
     }
 
     .services__section {
 
         .services__h2 {
             width: 56%;
+            margin: 7rem 0 2rem 3rem;
         }
-
+        
         .services__container {
             display: flex;
             flex-direction: column;
             place-content: center;
             gap: 2rem;
-            margin: 0 0 10rem 0;
+            margin: 0 0 5rem 0;
+        }
+    }
+
+    .design__section {
+
+        .design__h2 {
+            margin: 0 0 3rem 3rem;
+            width: 83%;
+        }
+        
+        .design__container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+        }
+
+        .design__div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .design__figure {
+            width: 95%;
+            margin-bottom: 1rem;
+            img {
+                border-radius: .75rem;
+            }
+        }
+
+        .design__p {
+            color: map-get($palette, 'grey-shaded');
+            font-size: .75rem;
+            font-weight: 300;
+            align-self: flex-start;
+            margin-left: .5rem;
+        }
+        
+        .design__h4 {
+            font-size: 1.125rem;
+            font-weight: $fw-medium;
+            align-self: flex-start;
+            margin-left: .5rem;
+        }
+
+        .design__a {
+            color: map-get($palette, 'light-blue');
+            font-size: 1.125rem;
+            font-weight: $fw-medium;
+            display: flex;
+            gap: .75rem;
+            margin-left: .5rem;
+
+            .design__span--arrow {
+                padding-top: .15rem;
+                font-variation-settings:
+                'FILL' 1,
+                'wght' 700,
+                'GRAD' -25,
+                'opsz' 20
+            }
         }
     }
 }
