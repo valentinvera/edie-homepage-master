@@ -1,0 +1,95 @@
+@use '../abstracts' as *;
+
+.footer {
+    background-color: map-get($palette, 'black');
+    height: 43.313rem;
+    margin-top: 15rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    
+    &__nav {
+        padding-left: 2rem;
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: .50rem;
+            
+            li {
+                a {
+                    color: map-get($palette, 'white');
+                    font-size: 1.125rem;
+                }
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: .50rem;
+        margin-block: 4rem 4.50rem;
+        padding-left: 2rem;
+
+        h2 {
+            font-size: 2.25rem;
+            font-family: 'Heebo';
+            font-weight: $fw-extrabold;
+            a {
+                color: map-get($palette, 'light-white' );
+            }
+        }
+
+        .footer__div {
+            display: flex;
+            gap: .75rem;
+
+            a {
+                img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+    }
+
+    &__form {
+        margin-inline: auto;
+
+        .footer__label {
+            color: map-get($palette , 'grey-shaded');
+        }
+
+        .footer__input {
+            padding: .75rem 6.25rem .75rem 0;
+        }
+
+        .footer__button {
+            left: 15.75rem;
+        }
+    }
+
+    &__div--copyright {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 1.15rem;
+        
+        .footer__p {
+            color: map-get($palette, 'light-white');
+            font-size: .875rem;
+            font-family: $font-family-tertiary;
+    
+            a {
+                color: map-get($palette, 'light-white');
+            }
+            
+            a:nth-child(1) {
+                font-weight: 700;
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
