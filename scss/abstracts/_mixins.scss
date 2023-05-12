@@ -1,6 +1,6 @@
 @use 'breakpoints' as *;
 
-@mixin mq-width($breakpoint, $type) {
+@mixin mq-width($type, $breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
         $width-value: map-get($breakpoints, $breakpoint);
 
