@@ -1,11 +1,27 @@
 @use 'breakpoints' as *;
 
-@mixin mq-maxwidth($breakpoint) {
-    @if map-get($breakpoints, $breakpoint) {
-        @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
-            @content;  
+@mixin mq-width($breakpoint, $type) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $width-value: map-get($breakpoints, $breakpoint);
+
+        @if $type =='max' {
+            @media screen and (max-width: $width-value) {
+                @content;
+            }
         }
-    } @else {
-        @error "El valor '#{ $breakpoint }' no ha sido declarado como breakpoint";
+
+        @else if $type =='min' {
+            @media screen and (min-width: $width-value) {
+                @content;
+            }
+        }
+
+        @else {
+            @error "El segundo argumento debe ser 'max' o 'min'";
+        }
+    }
+
+    @else {
+        @error "El valor '#{$breakpoint}' no ha sido declarado como breakpoint"
     }
 }
