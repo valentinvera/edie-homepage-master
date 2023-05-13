@@ -10,4 +10,10 @@
     position: absolute;
     left: 15rem;
     cursor: pointer;
+    
+    @include mq-width('min', 'xl') {
+        margin: .30rem 0 0 0;
+        padding: .65rem 1.5rem;
+        left: 33.15rem;
+    }
 }
