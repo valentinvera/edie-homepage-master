@@ -3,36 +3,66 @@
 .hero {
     padding-top: 8.5rem;
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 
     &__container {
         padding-left: 2.25rem;
+
+        @include mq-width('min', 'xl') {
+            padding-left: 17rem;   
+        }
     }
 
     &__a {
         color: map-get($palette, 'light-blue');
         font-size: .75rem;
         font-weight: $fw-medium;
+
+        @include mq-width('min', 'xl') {
+            font-size: 1.125rem;
+            // margin-bottom: 1rem;
+        }
     }
     
     &__h2 {
         font-size: 1.5rem;
         font-weight: $fw-medium;
         width: 84%;
+
+        @include mq-width('min', 'xl') {
+            font-size: 3rem;
+            width: 32%;
+            margin-bottom: 1rem;
+        }
     }
     
     &__h2:nth-child(1) {
         width: 67%;
         margin-bottom: 1rem;
+
+        @include mq-width('min', 'xl') {
+            width: 25%;
+            margin-bottom: 2.5rem;
+        }
     }
 
     &__figure {
-        width: 21.75rem;
+        width: 92%;
         height: 9.063rem;
         margin-inline: auto;
+        margin-bottom: 1rem;
+
+        @include mq-width('min', 'xl') {
+            width: 95%;
+            height: 22.125rem;
+        }
+
         img {
             height: 100%;
             border-radius: 1.125rem;
+
+            @include mq-width('min', 'xl') {
+            }
         }
     }
 
@@ -41,5 +71,10 @@
         font-weight: $fw-regular;
         width: 85%;
         margin-bottom: 2rem;
+        
+        @include mq-width('min', 'xl') {
+            font-size: 1.125rem;
+            width: 21%;
+        }
     }
 }
