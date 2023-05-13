@@ -8,7 +8,11 @@
         color: map-get($palette, 'grey-shaded');
         font-size: .625rem;
         font-weight: $fw-medium;
-        margin-bottom: .50rem;
+        margin-bottom: .5rem;
+
+        @include mq-width('min', 'xl') {
+            font-size: .875rem;
+        }
     }
         
     .hero__div {
@@ -20,6 +24,10 @@
         border: none;
         border-radius: .75rem;
         padding: .75rem 5.5rem .75rem 0;
+        
+        @include mq-width('min', 'xl') {
+            padding: 1rem 9.25rem 1rem 0;
+        }
     }
 
     ::placeholder {
