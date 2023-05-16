@@ -5,6 +5,10 @@
     &__h2 {
         font-size: 1.5rem;
         font-weight: $fw-medium;
+
+        @include mq-width('min', 'xl') {
+            font-size: 2.25rem;
+        }
     }
 
     .services__section {
@@ -12,6 +16,11 @@
         .services__h2 {
             width: 56%;
             margin: 7rem 0 2rem 3rem;
+
+            @include mq-width('min', 'xl') {
+                width: 20%;
+                margin: 12rem 0 2rem 9.5rem;
+            }
         }
         
         .services__container {
@@ -20,33 +29,66 @@
             place-content: center;
             gap: 2rem;
             margin: 0 0 5rem 0;
+
+            @include mq-width('min', 'xl') {
+                flex-direction: row;
+            }
         }
     }
 
     .design__section {
+        margin-bottom: 20rem;
 
         .design__h2 {
             margin: 0 0 3rem 3rem;
             width: 83%;
+            
+            @include mq-width('min', 'xl') {
+                margin: 15rem 0 3rem 9.5rem;
+                margin-left: 9.75rem;
+                width: 23%;
+            }
         }
         
         .design__container {
             display: flex;
             flex-direction: column;
             gap: 1.75rem;
+
+            @include mq-width('min', 'xl') {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                width: 50%;
+                margin-inline: auto;
+            }
         }
 
         .design__div {
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @include mq-width('min', 'xl') {
+                margin-inline: auto;
+
+                &:nth-child(odd) {
+                    position: relative;
+                    top: 8.75rem;
+                }
+            }
         }
 
         .design__figure {
             width: 95%;
             margin-bottom: 1rem;
+
+            @include mq-width('min', 'xl') {
+                width: 33.938rem;
+            }
+
             img {
                 border-radius: .75rem;
+
             }
         }
 
@@ -56,6 +98,10 @@
             font-weight: 300;
             align-self: flex-start;
             margin-left: .5rem;
+
+            @include mq-width('min', 'xl') {
+                font-size: .875rem;
+            }
         }
         
         .design__h4 {
@@ -63,6 +109,10 @@
             font-weight: $fw-medium;
             align-self: flex-start;
             margin-left: .5rem;
+
+            @include mq-width('min', 'xl') {
+                font-size: 1.5rem;
+            }
         }
 
         .design__a {
@@ -72,6 +122,14 @@
             display: flex;
             gap: .75rem;
             margin-left: .5rem;
+
+            @include mq-width('min', 'xl') {
+                align-items: center;
+                font-size: 1.5rem;
+                grid-column: 2 / 3;
+                justify-content: flex-end;
+                margin-top: 4.5rem;
+            }
 
             .design__span--arrow {
                 padding-top: .15rem;
@@ -89,26 +147,50 @@
         flex-direction: column;
         margin-top: 6rem;
 
+        @include mq-width('min', 'xl') {
+            flex-direction: row;
+            margin-left: 10rem;
+        }
+
         .team__div--texts {
             display: flex;
             flex-direction: column;
             margin-left: .5rem;
 
-            .team__h2 {
-                font-size: 2.25rem;
-                width: 75%;
-                margin-bottom: .75rem;
+            @include mq-width('min', 'xl') {
+                margin-left: unset;
+                margin-top: 7.5rem;
+                margin-right: 12rem;
             }
             
             .team__p:nth-child(1) {
                 color: map-get($palette, 'crimson');
                 font-size: 1.125rem;
                 font-weight: $fw-medium;
+                
+                @include mq-width('min', 'xl') {
+                    margin-bottom: .25rem;
+                }
             }
-        
+
+            .team__h2 {
+                font-size: 2.25rem;
+                width: 75%;
+                margin-bottom: .75rem;
+
+                @include mq-width('min', 'xl') {
+                    width: 52%;
+                    margin-bottom: 1rem;
+                }
+            }
+            
             .team__p:nth-child(3) {
                 width: 61%;
                 margin-bottom: 2rem;
+
+                @include mq-width('min', 'xl') {
+                    width: 49%;
+                }
             }
         }
 
@@ -116,6 +198,11 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             margin-inline: 1.25rem;
+
+            @include mq-width('min', 'xl') {
+                margin-inline: unset;
+                gap: 1rem;
+            }
 
             img {
                 border-radius: 1.5rem;
@@ -125,8 +212,14 @@
                 position: relative;
                 top: 4.375rem;
                 right: .5rem;
-                height: 11.125rem;
                 width: 11.125rem;
+                height: 11.125rem;
+
+                @include mq-width('min', 'xl') {
+                    width: 20rem;
+                    height: 20rem;
+                    top: 7.188rem;
+                }
             }
             
             .team__figure--2 {
@@ -135,11 +228,22 @@
                 grid-column: 2 / 3;
                 height: 10.348rem;
                 width: 10.125rem;
+
+                @include mq-width('min', 'xl') {
+                    width: 18.188rem;
+                    height: 18.75rem;
+                    top: -3.438rem;
+                }
             }
             
             .team__figure--1 {
                 width: 9.047rem;
                 height: 9.047rem;
+
+                @include mq-width('min', 'xl') {
+                    width: 16.25rem;
+                    height: 16.25rem;
+                }
             }
         }
     }
@@ -148,10 +252,20 @@
         margin-top: 4rem;
         margin-bottom: 6rem;
 
+        @include mq-width('min', 'xl') {
+            margin-left: 10rem;
+            margin-top: 8rem;
+        }
+
         .testimony__h2 {
             font-size: 1.5rem;
             width: 96%;
             padding-left: .5rem;
+
+            @include mq-width('min', 'xl') {
+                font-size: 2.25rem;
+                width: 51%;
+            }
         }
 
         .testimony__div {
