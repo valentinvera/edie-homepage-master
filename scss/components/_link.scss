@@ -5,11 +5,19 @@
     background-color: map-get($palette, 'opaque-grey');
     border-radius: .75rem;
     display: inline-block;
-    padding: .50rem .75rem;
+    padding: .5rem .75rem;
 
     &:active {
         color: #fff;    
         background-color: map-get($palette, 'light-blue');
         transition: all .3s ease-in-out;
+    }
+    
+    @include mq-width('min', 'xl') {
+        &:hover {
+            color: #fff;    
+            background-color: map-get($palette, 'light-blue');
+            transition: all .3s ease-in-out;
+        }
     }
 }
