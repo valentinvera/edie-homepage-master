@@ -72,14 +72,6 @@
     &__form {
         margin-inline: auto;
 
-        .footer__label {
-            color: map-get($palette, 'grey-shaded');
-            
-            @include mq-width('min', 'xl') {
-                color: map-get($palette, 'light-white');
-            }
-        }
-
         .footer__input {
             padding: .75rem 6.25rem .75rem 0;
         }
