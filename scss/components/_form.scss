@@ -1,25 +1,26 @@
 @use '../abstracts' as *;
 
-.hero__form {
+form {
     display: flex;
     flex-direction: column;
         
-    .hero__label {
+    label {
         color: map-get($palette, 'grey-shaded');
         font-size: .625rem;
         font-weight: $fw-medium;
         margin-bottom: .5rem;
 
         @include mq-width('min', 'xl') {
+            color: map-get($palette, 'light-white');
             font-size: .875rem;
         }
     }
         
-    .hero__div {
+    div {
         display: flex;
     }
 
-    .hero__input {
+    input {
         background-color: map-get($palette, 'light-white');
         border: none;
         border-radius: .75rem;
