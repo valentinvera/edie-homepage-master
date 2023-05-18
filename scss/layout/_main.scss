@@ -59,7 +59,7 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 width: 50%;
-                margin-inline: auto;
+                margin-left: 9.75rem;
             }
         }
 
@@ -83,7 +83,7 @@
             margin-bottom: 1rem;
 
             @include mq-width('min', 'xl') {
-                width: 16.969rem;
+                width: 25rem;
             }
 
             img {
