@@ -61,13 +61,17 @@
                 width: 50%;
                 margin-inline: auto;
             }
+
+            @include mq-width('max', 'xl') {
+                justify-content: center;
+            }
         }
 
         .design__div {
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            
             @include mq-width('min', 'xl') {
                 margin-inline: auto;
 
