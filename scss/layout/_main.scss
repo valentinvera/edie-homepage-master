@@ -54,7 +54,7 @@
             display: flex;
             flex-direction: column;
             gap: 1.75rem;
-
+            
             @include mq-width('min', 'xl') {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -81,9 +81,13 @@
         .design__figure {
             width: 95%;
             margin-bottom: 1rem;
-
+            
             @include mq-width('min', 'xl') {
                 width: 33.938rem;
+            }
+
+            @include mq-width('max', 'xl') {
+                width: 16.969rem;
             }
 
             img {
