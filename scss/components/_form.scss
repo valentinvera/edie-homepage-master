@@ -24,11 +24,12 @@ form {
         background-color: map-get($palette, 'light-white');
         border: none;
         border-radius: .75rem;
-        // padding: .75rem 5.5rem .75rem 0;
-        background-color: red;
+        width: 18.188rem;
+        height: 2.938rem;
         
         @include mq-width('min', 'xl') {
-            padding: 1rem 9.25rem 1rem 0;
+            width: 21.875rem;
+            height: 3.563rem;
         }
     }
 
