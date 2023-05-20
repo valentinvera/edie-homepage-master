@@ -24,6 +24,7 @@ form {
         background-color: map-get($palette, 'light-white');
         border: none;
         border-radius: .75rem;
+        display: block;
         padding: .75rem 5.5rem .75rem 0;
         
         @include mq-width('min', 'xl') {

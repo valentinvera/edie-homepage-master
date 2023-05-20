@@ -74,10 +74,6 @@
 
         .footer__input {
             padding: .75rem 6.25rem .75rem 0;
-            
-            @include mq-width('min', 'sm') {
-                padding: .75rem 5.5rem .75rem 0;
-            }
         }
 
         .footer__button {
