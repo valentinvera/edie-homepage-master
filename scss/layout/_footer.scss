@@ -72,12 +72,10 @@
     &__form {
         margin-inline: auto;
 
-        .footer__input {
-            padding: .75rem 6.25rem .75rem 0;
-        }
-
         .footer__button {
-            left: 15.85rem;
+            left: 15.5rem;
+            margin-top: .25rem;
+            padding-top: .5rem;
 
             @include mq-width('min', 'xl') {
                 position: relative;
