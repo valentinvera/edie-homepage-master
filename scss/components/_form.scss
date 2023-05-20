@@ -26,11 +26,6 @@ form {
         border-radius: .75rem;
         padding: .75rem 5.5rem .75rem 0;
         
-        @include mq-width('max', 'lg') {
-            padding: .75rem 5rem .75rem 0;
-            background-color: red;
-        }
-        
         @include mq-width('min', 'xl') {
             padding: 1rem 9.25rem 1rem 0;
         }
