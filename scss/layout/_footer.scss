@@ -77,11 +77,8 @@
             margin-top: .25rem;
             padding-top: .5rem;
 
-            @include mq-width('min', 'xl') {
-                position: relative;
-                left: -5.20rem;
-                padding: .50rem 1.5rem;
-                margin: .30rem 0 .25rem 0;
+            @include mq-width('min', 'sm') {
+                position: unset;  
             }
         }
     }
