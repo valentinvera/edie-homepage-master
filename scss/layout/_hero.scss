@@ -73,4 +73,12 @@
             width: 21%;
         }
     }
+
+    .hero__button {
+        left: 15.15rem;
+
+        @include mq-width('min', 'md') {
+            margin-top: .35rem;
+        }
+    }
 }
