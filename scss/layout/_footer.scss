@@ -80,13 +80,6 @@
             @include mq-width('min', 'sm') {
                 left: 16rem;
                 background-color: red;
-
-                @include mq-width('min', 'xl') {
-                    position: relative;
-                    left: -5.20rem;
-                    padding: .50rem 1.5rem;
-                    margin: .30rem 0 .25rem 0;
-                }
             }
             
         }
