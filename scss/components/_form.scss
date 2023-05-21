@@ -26,7 +26,6 @@ form {
         border-radius: .75rem;
         width: 18.188rem;
         height: 2.938rem;
-        background-color: red;
 
         @include mq-width('min', 'xl') {
             width: 21.875rem;
