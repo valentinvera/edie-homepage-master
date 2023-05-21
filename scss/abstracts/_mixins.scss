@@ -4,13 +4,13 @@
     @if map-has-key($breakpoints, $breakpoint) {
         $width-value: map-get($breakpoints, $breakpoint);
 
-        @if $type =='max' {
+        @if $type == 'max' {
             @media screen and (max-width: $width-value) {
                 @content;
             }
         }
 
-        @else if $type =='min' {
+        @else if $type == 'min' {
             @media screen and (min-width: $width-value) {
                 @content;
             }
