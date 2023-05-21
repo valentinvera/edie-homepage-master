@@ -76,10 +76,6 @@
             left: 15.5rem;
             margin-top: .25rem;
             padding-top: .5rem;
-
-            @include mq-width('min', 'sm') {
-                background-color: red;
-            }
         }
     }
 
