@@ -77,10 +77,8 @@
             margin-top: .25rem;
             padding-top: .5rem;
 
-            @media screen and (min-width: 376px) {
-                .footer__button {
-                    background-color: red;
-                }
+            @include mq-width('min', 'sm') {
+                left: 17rem;
             }
         }
     }
