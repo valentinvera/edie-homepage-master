@@ -77,7 +77,7 @@
             margin-top: .25rem;
             padding-top: .5rem;
             
-            @include mq-width('min', 'lg') {
+            @include mq-width('min', 'sm') {
                 left: 16rem;
                 background-color: red;
 
