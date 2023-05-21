@@ -79,6 +79,7 @@
 
             @include mq-width('min', 'sm') {
                 left: 17rem;
+                background-color: red;
             }
         }
     }
