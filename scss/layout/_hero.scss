@@ -5,6 +5,10 @@
     display: grid;
     gap: 2rem;
 
+    @include mq-width('min', 'sm') {
+        background-color: red;
+    }
+
     &__container {
         padding-left: 2.25rem;
 
