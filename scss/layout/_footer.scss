@@ -76,12 +76,10 @@
             left: 15.5rem;
             margin-top: .25rem;
             padding-top: .5rem;
-            
-            @include mq-width('min', 'sm') {
-                left: 16rem;
-                background-color: red;
+
+            @media screen and (min-width: 375px) {
+                left: 16.5rem;
             }
-            
         }
     }
 
