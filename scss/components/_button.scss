@@ -8,9 +8,8 @@
     border: none;
     border-radius: .75rem;
     position: absolute;
-    left: 15.15rem;
     cursor: pointer;
-    
+
     @include mq-width('min', 'xl') {
         margin: .30rem 0 0 0;
         padding: .65rem 1.5rem;
