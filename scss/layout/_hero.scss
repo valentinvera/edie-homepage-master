@@ -2,7 +2,8 @@
 
 .hero {
     padding-top: 8.5rem;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 
     &__container {
@@ -74,11 +75,7 @@
         }
     }
 
-    .hero__button {
-        left: 15.15rem;
-
-        @include mq-width('min', 'md') {
-            margin-top: .35rem;
-        }
+    &__form {
+        align-items: flex-start;
     }
 }
