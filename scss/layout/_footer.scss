@@ -3,7 +3,6 @@
 .footer {
     background-color: map-get($palette, 'black');
     height: 43.313rem;
-    margin-top: 15rem;
     padding-top: 3rem;
     display: flex;
     flex-direction: column;
@@ -73,16 +72,7 @@
         margin-inline: auto;
 
         .footer__button {
-            left: 15.5rem;
             margin-top: .25rem;
-            padding-top: .5rem;
-
-            @include mq-width('min', 'xl') {
-                position: relative;
-                left: -5.20rem;
-                padding: .50rem 1.5rem;
-                margin: .30rem 0 .25rem 0;
-            }
         }
     }
 
