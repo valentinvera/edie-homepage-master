@@ -24,8 +24,12 @@
 
         &__h1 {
             font-family: $font-family-secondary;
-            font-size: 2.25rem;
+            font-size: 1.5rem;
             font-weight: $fw-extrabold;
+            
+            @include mq-width('min', 'xl') {
+                font-size: 2.25rem;
+            }
         }
 
         &__button {
