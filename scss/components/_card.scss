@@ -9,6 +9,12 @@
     margin-inline: auto;
     border-radius: 1.5rem;
 
+    @media screen and (max-width: 374px) {
+        @include mq-width('max', 'sm') {
+            width: 95%;
+        }
+    }
+
     @include mq-width('min', 'xl') {
         margin-inline: unset;
     }
