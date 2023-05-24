@@ -176,7 +176,7 @@
                 font-size: 2.25rem;
                 width: 75%;
                 margin-bottom: .75rem;
-
+                
                 @include mq-width('min', 'xl') {
                     width: 52%;
                     margin-bottom: 1rem;
@@ -198,6 +198,13 @@
             grid-template-columns: repeat(2, 1fr);
             margin-inline: 1.25rem;
 
+            @media screen and (max-width: 374px) {
+                @include mq-width('max', 'sm') {
+                    gap: .5rem;
+                }
+            }
+
+
             @include mq-width('min', 'xl') {
                 margin-inline: unset;
                 gap: 1rem;
@@ -214,6 +221,14 @@
                 width: 11.125rem;
                 height: 11.125rem;
 
+                @media screen and (max-width: 374px) {
+                    @include mq-width('max', 'sm') {
+                        width: 9.125rem;
+                        height: 9.125rem;
+                        right: 0rem;
+                    }
+                }
+
                 @include mq-width('min', 'xl') {
                     width: 20rem;
                     height: 20rem;
@@ -225,8 +240,16 @@
                 position: relative;
                 top: -1.438rem;
                 grid-column: 2 / 3;
-                height: 10.348rem;
                 width: 10.125rem;
+                height: 10.348rem;
+
+                @media screen and (max-width: 374px) {
+                    @include mq-width('max', 'sm') {
+                        width: 8.125rem;
+                        height: 8.348rem;
+                        top: -2rem;
+                    }
+                }
 
                 @include mq-width('min', 'xl') {
                     width: 18.188rem;
@@ -238,6 +261,13 @@
             .team__figure--1 {
                 width: 9.047rem;
                 height: 9.047rem;
+
+                @media screen and (max-width: 374px) {
+                    @include mq-width('max', 'sm') {
+                        width: 7.047rem;
+                        height: 7.047rem;
+                    }
+                }
 
                 @include mq-width('min', 'xl') {
                     width: 16.25rem;
