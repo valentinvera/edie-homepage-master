@@ -28,6 +28,12 @@ form {
         border: none;
         border-radius: .75rem;
 
+        @media screen and (max-width: 374px) {
+            @include mq-width('max', 'sm') {
+                width: 16rem;
+            }
+        }
+
         @include mq-width('min', 'xl') {
             width: 21.875rem;
             height: 3.563rem;
