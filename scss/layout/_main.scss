@@ -204,6 +204,11 @@
                 }
             }
 
+            @media screen and (min-width: 376px) {
+                @include mq-width('max', 'md') {
+                    gap: .65rem;
+                }
+            }
 
             @include mq-width('min', 'xl') {
                 margin-inline: unset;
@@ -225,6 +230,13 @@
                     @include mq-width('max', 'sm') {
                         width: 9.125rem;
                         height: 9.125rem;
+                        right: 0rem;
+                    }
+                }
+
+                @media screen and (min-width: 376px) {
+                    @include mq-width('max', 'md') {
+                        width: 12.125rem;
                         right: 0rem;
                     }
                 }
@@ -251,6 +263,13 @@
                     }
                 }
 
+                @media screen and (min-width: 376px) {
+                    @include mq-width('max', 'md') {
+                        width: 11.125rem;
+                        top: -0.438rem;
+                    }
+                }
+
                 @include mq-width('min', 'xl') {
                     width: 18.188rem;
                     height: 18.75rem;
@@ -266,6 +285,13 @@
                     @include mq-width('max', 'sm') {
                         width: 7.047rem;
                         height: 7.047rem;
+                    }
+                }
+
+
+                @media screen and (min-width: 376px) {
+                    @include mq-width('max', 'md') {
+                        width: 10.047rem;
                     }
                 }
 
