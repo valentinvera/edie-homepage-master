@@ -203,10 +203,11 @@
                     gap: .5rem;
                 }
             }
-
+            
             @media screen and (min-width: 376px) {
                 @include mq-width('max', 'md') {
                     gap: .65rem;
+                    background-color: red;
                 }
             }
 
