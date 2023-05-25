@@ -205,9 +205,8 @@
             }
             
             @media screen and (min-width: 376px) {
-                @include mq-width('max', 'md') {
+                @include mq-width('min', 'sm') {
                     gap: .65rem;
-                    background-color: red;
                 }
             }
 
@@ -236,7 +235,7 @@
                 }
 
                 @media screen and (min-width: 376px) {
-                    @include mq-width('max', 'md') {
+                    @include mq-width('min', 'sm') {
                         width: 12.125rem;
                         right: 0rem;
                     }
@@ -265,7 +264,7 @@
                 }
 
                 @media screen and (min-width: 376px) {
-                    @include mq-width('max', 'md') {
+                    @include mq-width('min', 'sm') {
                         width: 11.125rem;
                         top: -0.438rem;
                     }
@@ -291,7 +290,7 @@
 
 
                 @media screen and (min-width: 376px) {
-                    @include mq-width('max', 'md') {
+                    @include mq-width('min', 'sm') {
                         width: 10.047rem;
                     }
                 }
