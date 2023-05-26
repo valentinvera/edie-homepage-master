@@ -11,7 +11,6 @@ form {
         margin-bottom: .5rem;
 
         @include mq-width('min', 'xl') {
-            color: map-get($palette, 'light-white');
             font-size: .875rem;
         }
     }
