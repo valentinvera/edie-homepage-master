@@ -18,7 +18,7 @@
             margin: 7rem 0 2rem 3rem;
 
             @include mq-width('min', 'xl') {
-                width: 22%;
+                width: 24%;
                 margin: 12rem 0 2rem 9.5rem;
             }
         }
@@ -46,7 +46,7 @@
             @include mq-width('min', 'xl') {
                 margin: 15rem 0 3rem 9.5rem;
                 margin-left: 9.75rem;
-                width: 26%;
+                width: 28%;
             }
         }
         
@@ -58,8 +58,9 @@
             @include mq-width('min', 'xl') {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                margin-inline: 19rem;
-                gap: 8rem 0;
+                width: 78%;
+                margin-inline: auto;
+                row-gap: 8rem;
             }
         }
 
@@ -83,7 +84,7 @@
             margin-bottom: 1rem;
 
             @include mq-width('min', 'xl') {
-                width: 25rem;
+                width: 34.063rem;
             }
 
             img {
@@ -148,7 +149,8 @@
 
         @include mq-width('min', 'xl') {
             flex-direction: row;
-            justify-content: center;
+            width: 90%;
+            margin-inline: auto;
         }
 
         .team__div--texts {
@@ -177,7 +179,7 @@
                 margin-bottom: .75rem;
                 
                 @include mq-width('min', 'xl') {
-                    width: 52%;
+                    width: 54%;
                     margin-bottom: 1rem;
                 }
             }
@@ -318,7 +320,7 @@
 
             @include mq-width('min', 'xl') {
                 font-size: 2.25rem;
-                width: 51%;
+                width: 77%;
             }
         }
 
