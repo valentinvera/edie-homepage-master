@@ -71,6 +71,12 @@
     &__form {
         margin-inline: auto;
 
+        @include mq-width('min', 'xl') {
+            .footer__label {
+                color: map-get($palette, 'light-white');
+            }
+        }
+
         .footer__button {
             margin-top: .26rem;
         }
