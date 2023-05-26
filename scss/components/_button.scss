@@ -9,4 +9,8 @@
     border-radius: .75rem;
     position: absolute;
     cursor: pointer;
+
+    @include mq-width('min', 'xl') {
+        padding: .5rem 1.5rem;
+    }
 }
