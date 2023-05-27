@@ -194,7 +194,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: .5rem;
 
-            @include mq-width('max', 'lg') {
+            @include mq-width('max', 'md') {
                 margin-inline: auto;
             }
 
@@ -213,11 +213,13 @@
                 width: 11.125rem;
                 height: 11.125rem;
 
-                @media screen and (max-width: 374px) {
-                    @include mq-width('max', 'sm') {
+                @include mq-width('max', 'sm') {
+                    @media screen and (max-width: 349px) {
                         width: 9.125rem;
                         height: 9.125rem;
                     }
+                    width: 10.125rem;
+                    height: 10.125rem;
                 }
 
                 @include mq-width('min', 'xl') {
@@ -234,12 +236,13 @@
                 width: 10.125rem;
                 height: 10.348rem;
 
-                @media screen and (max-width: 374px) {
-                    @include mq-width('max', 'sm') {
+                @include mq-width('max', 'sm') {
+                    @media screen and (max-width: 349px) {
                         width: 8.125rem;
                         height: 8.348rem;
-                        top: -2.15rem;
                     }
+                    width: 9.125rem;
+                    height: 9.348rem;
                 }
 
                 @include mq-width('min', 'xl') {
@@ -253,11 +256,13 @@
                 width: 9.047rem;
                 height: 9.047rem;
 
-                @media screen and (max-width: 374px) {
-                    @include mq-width('max', 'sm') {
+                @include mq-width('max', 'sm') {
+                    @media screen and (max-width: 349px) {
                         width: 7.047rem;
                         height: 7.047rem;
                     }
+                    width: 8.047rem;
+                    height: 8.047rem;
                 }
 
                 @include mq-width('min', 'xl') {
