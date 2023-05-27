@@ -45,7 +45,6 @@
             
             @include mq-width('min', 'xl') {
                 margin: 15rem 0 3rem 9.5rem;
-                margin-left: 9.75rem;
                 width: 28%;
             }
         }
@@ -54,7 +53,7 @@
             display: flex;
             flex-direction: column;
             gap: 1.75rem;
-
+            
             @include mq-width('min', 'xl') {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -82,11 +81,7 @@
         .design__figure {
             width: 95%;
             margin-bottom: 1rem;
-
-            @include mq-width('min', 'xl') {
-                width: 34.063rem;
-            }
-
+            
             img {
                 border-radius: .75rem;
             }
@@ -197,18 +192,10 @@
         .team__div {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            margin-inline: 1.25rem;
+            gap: .5rem;
 
-            @media screen and (max-width: 374px) {
-                @include mq-width('max', 'sm') {
-                    gap: .5rem;
-                }
-            }
-            
-            @media screen and (min-width: 376px) {
-                @include mq-width('min', 'sm') {
-                    gap: .65rem;
-                }
+            @include mq-width('max', 'lg') {
+                margin-inline: auto;
             }
 
             @include mq-width('min', 'xl') {
@@ -223,7 +210,6 @@
             .team__figure--3 {
                 position: relative;
                 top: 4.375rem;
-                right: .5rem;
                 width: 11.125rem;
                 height: 11.125rem;
 
@@ -231,15 +217,6 @@
                     @include mq-width('max', 'sm') {
                         width: 9.125rem;
                         height: 9.125rem;
-                        right: 0rem;
-                    }
-                }
-
-
-                @media screen and (min-width: 376px) {
-                    @include mq-width('min', 'sm') {
-                        width: 12.125rem;
-                        right: 0rem;
                     }
                 }
 
@@ -252,7 +229,7 @@
             
             .team__figure--2 {
                 position: relative;
-                top: -1.438rem;
+                top: -2rem;
                 grid-column: 2 / 3;
                 width: 10.125rem;
                 height: 10.348rem;
@@ -261,14 +238,7 @@
                     @include mq-width('max', 'sm') {
                         width: 8.125rem;
                         height: 8.348rem;
-                        top: -2rem;
-                    }
-                }
-
-                @media screen and (min-width: 376px) {
-                    @include mq-width('min', 'sm') {
-                        width: 11.125rem;
-                        top: -0.438rem;
+                        top: -2.15rem;
                     }
                 }
 
@@ -287,12 +257,6 @@
                     @include mq-width('max', 'sm') {
                         width: 7.047rem;
                         height: 7.047rem;
-                    }
-                }
-
-                @media screen and (min-width: 376px) {
-                    @include mq-width('min', 'sm') {
-                        width: 10.047rem;
                     }
                 }
 
