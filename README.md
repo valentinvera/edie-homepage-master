@@ -6,15 +6,16 @@
 
 <div align="center">
   <h3>
-    <a href="https://ediehomepagemaster.vercel.app/">
+    <a href="https://ediehomepagemaster.vercel.app/" target="_blank">
       Demo
     </a>
     <span> | </span>
-    <a href="https://ediehomepagemaster.vercel.app/">
+    <a href="https://ediehomepagemaster.vercel.app/"target="_blank">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0">
+    <a href="https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0"
+    target="_blank">
       Challenge
     </a>
   </h3>
@@ -31,16 +32,18 @@
 
 ## Overview
 
-![screenshot](/screenshot-desktop.jpeg)(https://ediehomepagemaster.vercel.app/)
-![screenshot](/screenshot-mobile.jpeg)(https://ediehomepagemaster.vercel.app/)
+![screenshot](/screenshot-desktop.jpeg)
+![screenshot](/screenshot-mobile.jpeg)
 
-Challenge of cloning a <a href="https://ediehomepagemaster.vercel.app/">website</a> made with html, sass and javascript. Where I have overcome different problems that have arisen when making the page responsive for devices such as tablet and desktop, besides I have learned to overcome these problems, new and different ways to write code, optimize it and keep trying despite the complications. 
+## Description
+
+Challenge of cloning a <a href="https://ediehomepagemaster.vercel.app/" target="_blank">website</a> made with html, sass and javascript. Where I have overcome different problems that have arisen when making the page responsive for devices such as tablet and desktop, besides I have learned to overcome these problems, new and different ways to write code, optimize it and keep trying despite the complications. 
 
 ### Built With
 
-- [Html](https://html.com/)
-- [Sass](https://sass-lang.com/)
-- [Javascript](https://www.javascript.com/)
+- [HTML](https://html.com/)
+- [SASS](https://sass-lang.com/)
+- [JAVASCRIPT](https://www.javascript.com/)
 
 ## Features
 
@@ -60,12 +63,6 @@ $ npm install
 # Run the app
 $ npm run dev
 ```
-
-## Acknowledgements
-
-- [Steps to replicate a design with only Html, CSS(SASS) and JAVASCRIPT](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
 
 ## Contact
 
