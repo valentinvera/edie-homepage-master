@@ -29,10 +29,23 @@
         font-weight: $fw-medium;
         width: 84%;
 
+        @media screen and (min-width: 576px) and (max-width: 768px) {
+            width: 55%;
+        }
+
+        @media screen and (min-width: 768px) {
+            @include mq-width('max', 'xl') {
+                width: 40%;
+            }
+        }
+        
         @include mq-width('min', 'xl') {
             font-size: 3rem;
-            width: 49%;
             margin-bottom: 1rem;
+        }
+
+        @include mq-width('min', 'xl') {
+            width: 54%;
         }
     }
     
@@ -40,9 +53,22 @@
         width: 67%;
         margin-bottom: 1rem;
 
+        @media screen and (min-width: 576px) and (max-width: 768px) {
+            width: 43%;
+        }
+
+        @media screen and (min-width: 768px) {
+            @include mq-width('max', 'xl') {
+                width: 31%;
+            }
+        }
+
         @include mq-width('min', 'xl') {
-            width: 39%;
             margin-bottom: 2.5rem;
+        }
+
+        @include mq-width('min', 'xl') {
+            width: 42%;
         }
     }
 
@@ -68,10 +94,23 @@
         font-weight: $fw-regular;
         width: 83%;
         margin-bottom: 2rem;
-        
+
+        @media screen and (min-width: 576px) and (max-width: 768px) {
+            width: 46%;
+        }
+
+        @media screen and (min-width: 768px) {
+            @include mq-width('max', 'xl') {
+                width: 36%;
+            }
+        }
+
         @include mq-width('min', 'xl') {
             font-size: 1.125rem;
-            width: 34%;
+        }
+
+        @include mq-width('min', 'xl') {
+            width: 36%;
         }
     }
 
