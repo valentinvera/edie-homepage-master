@@ -12,6 +12,13 @@
         background-color: map-get($palette, 'light-blue');
         transition: all .3s ease-in-out;
     }
+
+    @media screen and (min-width: 768px) {
+        @include mq-width('max', 'xl') {
+            font-size: .85rem;
+            padding-block: .25rem;
+        }
+    }
     
     @include mq-width('min', 'xl') {
         &:hover {
