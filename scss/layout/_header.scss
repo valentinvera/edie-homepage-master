@@ -41,6 +41,12 @@
             border: none;
             margin-top: .15rem;
 
+            @media screen and (max-width: 1023px) {
+                @include mq-width('min', 'md') {
+                    display: none;
+                }
+            }
+
             @include mq-width('min', 'xl') {
                 display: none;
             }
@@ -81,6 +87,15 @@
             transition: transform 1s ease-in-out;
             background-color: #fffcfc;
 
+            @media screen and (max-width: 1023px) {
+                @include mq-width('min', 'md') {
+                    position: unset;
+                    flex-direction: row;
+                    background-color: unset;
+                    transform: unset;
+                }
+            }
+
             @include mq-width('min', 'xl') {
                 position: unset;
                 flex-direction: row;
@@ -98,6 +113,12 @@
             a {
                 font-size: 1.5rem;
                 font-weight: $fw-medium;
+
+                @media screen and (max-width: 1023px) {
+                    @include mq-width('min', 'md') {
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }
