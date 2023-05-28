@@ -17,9 +17,28 @@
             width: 56%;
             margin: 7rem 0 2rem 3rem;
 
+            @media screen and (min-width: 576px) and (max-width: 768px) {
+                width: 47%;
+            }
+
+            @media screen and (min-width: 768px) {
+                @include mq-width('max', 'xl') {
+                    width: 35%;
+                }
+            }
+
             @include mq-width('min', 'xl') {
-                width: 24%;
-                margin: 12rem 0 2rem 9.5rem;
+                @media screen and (min-width: 1200px) {
+                    width: 30%;
+                    margin: 12rem 0 2rem 9.5rem;
+                }
+            }
+            
+            @include mq-width('min', 'xl') {
+                @media screen and (max-width: 1200px) {
+                    margin: 12rem 0 2rem 7.5rem;
+                    width: 40%;
+                }
             }
         }
         
@@ -28,7 +47,21 @@
             flex-direction: column;
             place-content: center;
             gap: 2rem;
-            margin: 0 0 5rem 0;
+            margin-bottom: 5rem;
+
+            @media screen and (min-width: 768px) {
+                @include mq-width('max', 'xl') {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                }
+            }
+
+            @include mq-width('min', 'xl') {
+                @media screen and (max-width: 1300px) {
+                    flex-wrap: wrap;
+                }
+            }
 
             @include mq-width('min', 'xl') {
                 flex-direction: row;
@@ -42,10 +75,26 @@
         .design__h2 {
             margin: 0 0 3rem 3rem;
             width: 83%;
+
+            @media screen and (min-width: 576px) and (max-width: 768px) {
+                width: 55%;
+            }
+
+            @media screen and (max-width: 1023px) {
+                @include mq-width('min', 'md') {
+                    width: 41%;
+                }
+            }
             
             @include mq-width('min', 'xl') {
                 margin: 15rem 0 3rem 9.5rem;
-                width: 28%;
+                width: 34%;
+            }
+            
+            @include mq-width('min', 'xl') {
+                @media screen and (max-width: 1200px) {
+                    margin: 15rem 0 3rem 7.5rem;
+                }
             }
         }
         
@@ -53,13 +102,19 @@
             display: flex;
             flex-direction: column;
             gap: 1.75rem;
-            
+
+            @include mq-width('min', 'xl') {
+                @media screen and (max-width: 1200px) {
+                    gap: 0;
+                }
+            }
+
             @include mq-width('min', 'xl') {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                width: 78%;
-                margin-inline: auto;
-                row-gap: 8rem;
+                gap: 8rem 1rem;
+                width: 81%;
+                margin-left: 9.5rem;
             }
         }
 
@@ -69,8 +124,6 @@
             align-items: center;
 
             @include mq-width('min', 'xl') {
-                margin-inline: auto;
-
                 &:nth-child(odd) {
                     position: relative;
                     top: 8.75rem;
@@ -81,6 +134,16 @@
         .design__figure {
             width: 95%;
             margin-bottom: 1rem;
+
+            @media screen and (max-width: 1023px) {
+                @include mq-width('min', 'md') {
+                    width: 90%;
+                }
+            }
+
+            @media screen and (min-width: 1024px) {
+                width: 545px;
+            }
             
             img {
                 border-radius: .75rem;
@@ -93,17 +156,31 @@
             font-weight: 300;
             align-self: flex-start;
             margin-left: .5rem;
-
+            
+            @media screen and (max-width: 1023px) {
+                @include mq-width('min', 'md') {
+                    align-self: unset;
+                }
+            }
+            
             @include mq-width('min', 'xl') {
                 font-size: .875rem;
             }
+
         }
-        
+
         .design__h4 {
             font-size: 1.125rem;
             font-weight: $fw-medium;
             align-self: flex-start;
             margin-left: .5rem;
+
+            @media screen and (max-width: 1023px) {
+                @include mq-width('min', 'md') {
+                    font-size: 1rem;
+                    align-self: unset;
+                }
+            }
 
             @include mq-width('min', 'xl') {
                 font-size: 1.5rem;
@@ -117,6 +194,12 @@
             display: flex;
             gap: .75rem;
             margin-left: .5rem;
+
+            @media screen and (max-width: 1023px) {
+                @include mq-width('min', 'md') {
+                    justify-content: end;
+                }
+            }
 
             @include mq-width('min', 'xl') {
                 align-items: center;
@@ -152,6 +235,12 @@
             display: flex;
             flex-direction: column;
             margin-left: .5rem;
+        
+            @media screen and (max-width: 1023px) {
+                @include mq-width('min', 'md') {
+                    margin-left: 3rem;
+                }
+            }
 
             @include mq-width('min', 'xl') {
                 margin-left: 5rem;
@@ -172,6 +261,12 @@
                 font-size: 2.25rem;
                 width: 75%;
                 margin-bottom: .75rem;
+
+                @media screen and (max-width: 1023px) {
+                    @include mq-width('min', 'md') {
+                        width: 41%;
+                    }
+                }
                 
                 @include mq-width('min', 'xl') {
                     width: 54%;
@@ -182,6 +277,12 @@
             .team__p:nth-child(3) {
                 width: 61%;
                 margin-bottom: 2rem;
+
+                @media screen and (max-width: 1023px) {
+                    @include mq-width('min', 'md') {
+                        width: 35%;
+                    }
+                }
 
                 @include mq-width('min', 'xl') {
                     width: 49%;
@@ -194,7 +295,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: .5rem;
 
-            @include mq-width('max', 'md') {
+            @include mq-width('max', 'xl') {
                 margin-inline: auto;
             }
 
@@ -212,7 +313,7 @@
                 top: 4.375rem;
                 width: 11.125rem;
                 height: 11.125rem;
-
+                
                 @include mq-width('max', 'sm') {
                     @media screen and (max-width: 349px) {
                         width: 9.125rem;
@@ -220,6 +321,26 @@
                     }
                     width: 10.125rem;
                     height: 10.125rem;
+                }
+
+                @media screen and (max-width: 575px) {
+                    @include mq-width('min', 'lg') {
+                        width: 12.125rem;
+                        height: 12.125rem;
+                    }
+                }
+                
+                @media screen and (min-width: 576px) and (max-width: 768px) {
+                    width: 15.125rem;
+                    height: 15.125rem;
+                }
+
+                @media screen and (max-width: 1023px) {
+                    @include mq-width('min', 'md') {
+                        width: 17.125rem;
+                        height: 17.125rem;
+                        top: 6.5rem;
+                    }
                 }
 
                 @include mq-width('min', 'xl') {
@@ -245,6 +366,28 @@
                     height: 9.348rem;
                 }
 
+                @media screen and (max-width: 575px) {
+                    @include mq-width('min', 'lg') {
+                        width: 11.125rem;
+                        height: 11.348rem;
+                        top: -1.75rem;
+                    }
+                }
+
+                @media screen and (min-width: 576px) and (max-width: 768px) {
+                    width: 14.125rem;
+                    height: 14.348rem;
+                    top: -1.5rem;
+                }
+
+                @media screen and (max-width: 1023px) {
+                    @include mq-width('min', 'md') {
+                        width: 17.125rem;
+                        height: 17.348rem;
+                        top: -1.25rem;
+                    }
+                }
+
                 @include mq-width('min', 'xl') {
                     width: 18.188rem;
                     height: 18.75rem;
@@ -263,6 +406,25 @@
                     }
                     width: 8.047rem;
                     height: 8.047rem;
+                }
+
+                @media screen and (max-width: 575px) {
+                    @include mq-width('min', 'lg') {
+                        width: 10.047rem;
+                        height: 10.047rem;
+                    }
+                }
+
+                @media screen and (min-width: 576px) and (max-width: 768px) {
+                    width: 13.047rem;
+                    height: 13.047rem;
+                }
+
+                @media screen and (max-width: 1023px) {
+                    @include mq-width('min', 'md') {
+                        width: 15.125rem;
+                        height: 15.125rem;
+                    }
                 }
 
                 @include mq-width('min', 'xl') {
@@ -286,6 +448,12 @@
             font-size: 1.5rem;
             width: 96%;
             padding-left: .5rem;
+            
+            @media screen and (max-width: 1023px) {
+                @include mq-width('min', 'md') {
+                    width: 59%;
+                }
+            }
 
             @include mq-width('min', 'xl') {
                 font-size: 2.25rem;
