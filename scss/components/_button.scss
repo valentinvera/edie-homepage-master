@@ -4,13 +4,13 @@
     color: map-get($palette, 'light-white');
     background-color: map-get($palette, 'light-blue');
     padding: .438rem 1.5rem;
-    margin: .24rem .344rem 0 0;
+    margin: .22rem .313rem 0 0;
     border: none;
     border-radius: .75rem;
     position: absolute;
     cursor: pointer;
 
     @include mq-width('min', 'xl') {
-        padding: .7rem 1.5rem;
+        padding: .75rem 1.5rem;
     }
 }
