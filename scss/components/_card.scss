@@ -5,13 +5,21 @@
     height: 26.375rem;
     display: flex;
     flex-direction: column;
-    padding: 3.25rem 2rem 2rem;
+    padding: 3.25rem 2rem 0;
     margin-inline: auto;
     border-radius: 1.5rem;
 
     @media screen and (max-width: 374px) {
         @include mq-width('max', 'sm') {
-            width: 95%;
+            width: 90%;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        @include mq-width('max', 'xl') {
+            margin-inline: unset;
+            width: 17.313rem;
+            height: 22.375rem;
         }
     }
 
@@ -34,20 +42,28 @@
     }
     
     .material-symbols-outlined {
+        color: map-get($palette, 'white');
+        font-size: 2.25rem;
         width: 4.188rem;
         height: 4.188rem;
         border-radius: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: map-get($palette, 'white');
-        font-size: 2.25rem;
         margin-bottom: 2rem;
         font-variation-settings:
         'FILL' 1,
         'wght' 400,
         'GRAD' 0,
-        'opsz' 48
+        'opsz' 48;
+
+        @media screen and (min-width: 768px) {
+            @include mq-width('max', 'xl') {
+                font-size: 1.75rem;
+                width: 3.188rem;
+                height: 3.188rem;
+            }
+        }
     }
     
     .services__span--edit {
@@ -66,9 +82,21 @@
         font-size: 1.5rem;
         font-weight: $fw-bold;
         margin-bottom: 1.5rem;
+
+        @media screen and (min-width: 768px) {
+            @include mq-width('max', 'xl') {
+                font-size: 1.15rem;
+            }
+        }
     }
     
     .services__p {
         margin-bottom: 1.5rem;
+
+        @media screen and (min-width: 768px) {
+            @include mq-width('max', 'xl') {
+                font-size: .75rem;
+            }
+        }
     }
 }
